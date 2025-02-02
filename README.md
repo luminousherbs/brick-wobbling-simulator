@@ -15,11 +15,11 @@ You can:
 - Wobble the brick with the `A` and `D` keys.
 - Get a high score by clicking lots of times.
 - Compete with your friends for the highest score.
-- [Clone the repo](github.com/luminousherbs/brick-wobbling-simulator) so you can run BWS locally.
-- [Give the project a star](github.com/luminousherbs/brick-wobbling-simulator) to track its progress.
-- Discover a bug and report it on the [issues page](github.com/luminousherbs/brick-wobbling-simulator/issues).
-- [Submit a pull request](github.com/luminousherbs/brick-wobbling-simulator/pulls) to suggest a new feature or explain how to fix a bug.
-- [Fork the repo](github.com/luminousherbs/brick-wobbling-simulator/fork) and add your own features.
+- [Clone the repo](https://github.com/luminousherbs/brick-wobbling-simulator) so you can run BWS locally.
+- [Give the project a star](https://github.com/luminousherbs/brick-wobbling-simulator) to track its progress.
+- Discover a bug and report it on the [issues page](https://github.com/luminousherbs/brick-wobbling-simulator/issues).
+- [Submit a pull request](https://github.com/luminousherbs/brick-wobbling-simulator/pulls) to suggest a new feature or explain how to fix a bug.
+- [Fork the repo](https://github.com/luminousherbs/brick-wobbling-simulator/fork) and add your own features.
 - Press F12 and look at all the `console.log`s i forgot to delete.
 
 You can't:
