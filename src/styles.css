@@ -1,0 +1,52 @@
+body {
+    background-color: #000000;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+
+p {
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+
+a {
+    color: #ac7873;
+}
+
+.description {
+    font-size: clamp(1rem, 1.25vw, 1rem);
+    margin: 2rem;
+}
+
+.container {
+    text-align: center;
+}
+
+.brick {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(90vh, 60vw);
+}
+
+
+.tiltLeft {
+    transform: rotate(-4deg);
+}
+
+.tiltRight {
+    transform: rotate(4deg);
+}
+
+/* 
+90vw or some amount vh (60) which would cause vw to be 90
+if vw = 90, vh = 90 / width * height
+vh = (90 / 1599) * 1066 = 60
+*/
