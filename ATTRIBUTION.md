@@ -1,6 +1,6 @@
 # Asset Attribution and Credits
 ## Images
-### bricks/0.jpg
+### bricks/0_.jpg
 ![](src/images/bricks/0.jpg)
 Photo by [Andrewlister](https://commons.wikimedia.org/wiki/User:Andrewlister) licensed under the Public Domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Brick.jpg).
 
