@@ -22,9 +22,16 @@ a {
     color: #ac7873;
 }
 
+input {
+    height: 100%;
+    width: 100%;
+    font-size: max(20px, min(3vw, 6vh));
+    background-color: #ac7873;
+}
+
 .description {
     line-height: 1;
-    font-size: max(16px, min(1.5vw, 3vh));
+    font-size: max(16px, min(2vw, 4vh));
     margin: 2rem;
 }
 
@@ -36,7 +43,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: max(384px, min(40vw, 60vh));
+    width: max(300px, min(40vw, 60vh));
     /* padding: min(0.5vw, 1vh); */
 }
 
@@ -47,6 +54,29 @@ a {
 
 .tiltRight {
     transform: rotate(4deg);
+}
+
+.brickGpt {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: width 500ms;
+}
+
+.brickGpt input::placeholder {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+.brickGpt:hover {
+    width: 100%;
+}
+
+.brickGpt:hover input::placeholder {
+    opacity: 1;
 }
 
 /* 

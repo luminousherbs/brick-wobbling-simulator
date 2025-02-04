@@ -6,7 +6,7 @@
 
 let score = -1;
 
-const allowedKeys = new Set(["ArrowLeft", "ArrowRight", "a", "d", "A", "D"]);
+const brickRotatingKeys = new Set(["ArrowLeft", "ArrowRight", "a", "d", "A", "D"]);
 
 
 function updateScore() {
@@ -29,12 +29,28 @@ function rotateElement(element) {
     element.classList.toggle("tiltRight");
 };
 
+function brickGptInput() {
+    inputField = document.getElementById("brickGptInput");
+    console.log(inputField.value)
+    alert(
+        "BrickGpt says: 🧱🧱!  🧱🧱🧱🧱  🧱🧱  🧱🧱🧱,  🧱🧱🧱🧱🧱🧱  🧱🧱🧱🧱🧱🧱🧱.  🧱🧱🧱🧱🧱  🧱🧱  🧱🧱🧱🧱, 🧱🧱."
+    )
+}
+
+function brickGptWasClicked() {
+    console.log("brickGpt cliked");
+}
+
 function brickWasClicked() {
         console.log("brick cliked");
         rotateElement(brick);
         updateScore();
 };
 
+function addListenerToBrickGpt() {
+    brickGpt = document.getElementById("brickGpt");
+    brickGpt.addEventListener("click", brickGptWasClicked);
+}
 
 function addListenerToBrick() {
     console.log("addListenerToBrick");
@@ -48,12 +64,24 @@ function changeImageSource(image, source) {
     image.src = source;
 };
 
-document.addEventListener("DOMContentLoaded", addListenerToBrick);
+function addListeners() {
+    addListenerToBrick();
+    addListenerToBrickGpt();
+}
+
+function contentHasLoaded() {
+    addListeners();
+    brickGpt = document.getElementById("brickGptInput");
+    brickGptInput.value = "";
+}
+
+document.addEventListener("DOMContentLoaded", contentHasLoaded);
 
 document.addEventListener("keydown", function(event) {
-    pressedKey = allowedKeys.has(event.key);
-    if (pressedKey) {
-        brickWasClicked();
+    if (brickRotatingKeys.has(event.key)) {
+        rotateElement(brick);
+    } else if (event.key === "Enter") {
+        brickGptInput();
     }
 });
 
