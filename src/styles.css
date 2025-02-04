@@ -4,14 +4,16 @@ body {
 
 h1 {
     text-align: center;
-    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1;
+    font-size: max(24px, min(6vw, 12vh));
     font-family: "Roboto", sans-serif;
     color: #ffffff;
 }
 
 p {
     text-align: center;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    line-height: 1;
+    font-size: max(20px, min(3vw, 6vh));
     font-family: "Roboto", sans-serif;
     color: #ffffff;
 }
@@ -21,7 +23,8 @@ a {
 }
 
 .description {
-    font-size: clamp(1rem, 1.25vw, 1rem);
+    line-height: 1;
+    font-size: max(16px, min(1.5vw, 3vh));
     margin: 2rem;
 }
 
@@ -33,7 +36,8 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: min(90vh, 60vw);
+    width: max(384px, min(40vw, 60vh));
+    /* padding: min(0.5vw, 1vh); */
 }
 
 
