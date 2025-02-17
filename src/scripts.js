@@ -4,6 +4,8 @@
 //     alert("Hello, World!");
 // })
 
+// useless commit to wake up github
+
 let score = -1;
 
 const brickRotatingKeys = new Set(["ArrowLeft", "ArrowRight", "a", "d", "A", "D"]);
